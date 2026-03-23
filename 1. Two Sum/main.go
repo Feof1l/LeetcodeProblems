@@ -22,14 +22,14 @@ func main() {
 func twoSum(nums []int, target int) []int {
 	dict := make(map[int]int)
 
-	for i, num := range nums {
-		if _, ok := dict[target-num]; ok {
-			return []int{dict[target-num], i}
+	for i, elem := range nums {
+		diff := target - elem
+		if _, ok := dict[diff]; ok {
+			return []int{i, dict[diff]}
 		}
 
-		dict[num] = i
+		dict[elem] = i
 	}
 
 	return []int{}
-
 }
