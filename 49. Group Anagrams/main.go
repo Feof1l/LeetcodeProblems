@@ -21,18 +21,19 @@ func groupAnagrams(strs []string) [][]string {
 	dict := make(map[[26]int][]string)
 
 	for _, str := range strs {
-		var count [26]int
-		for _, s := range str {
-			count[s-'a']++
+		buf := [26]int{}
+		for _, elem := range str {
+			buf[elem-'a']++
 		}
 
-		dict[count] = append(dict[count], str)
+		dict[buf] = append(dict[buf], str)
 	}
 
-	var result [][]string
-	for _, v := range dict {
-		result = append(result, v)
+	res := [][]string{}
+
+	for _, value := range dict {
+		res = append(res, value)
 	}
 
-	return result
+	return res
 }
