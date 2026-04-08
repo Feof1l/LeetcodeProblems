@@ -1,6 +1,8 @@
 package main
 
-import "log"
+import (
+	"log"
+)
 
 func main() {
 	log.Println(maxDistToClosest([]int{0, 1, 1, 0, 0, 0}))
