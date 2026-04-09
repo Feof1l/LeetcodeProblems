@@ -25,7 +25,7 @@ import "log"
 // Output: [0,-6,0,0,0]
 
 func main() {
-	log.Println(productExceptSelf([]int{1, 2, 3, 4}))
+	log.Println(productExceptSelf([]int{1, 2, 3, 4, 5}))
 }
 
 func productExceptSelf(nums []int) []int {
