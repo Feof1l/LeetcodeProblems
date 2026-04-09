@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	log.Println(maxDistToClosest([]int{0, 1, 1, 0, 0, 0}))
+	log.Println(maxDistToClosest([]int{0, 1, 1, 0, 0, 0, 1}))
 }
 
 func maxDistToClosest(seats []int) int {
