@@ -9,7 +9,7 @@ import "log"
 
 // Output: true
 func main() {
-	log.Println(hasDuplicate([]int{}))
+	log.Println(hasDuplicate([]int{1, 1, 2, 3}))
 }
 
 func hasDuplicate(nums []int) bool {
