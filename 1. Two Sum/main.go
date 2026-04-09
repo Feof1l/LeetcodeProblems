@@ -34,8 +34,6 @@ func twoSum(nums []int, target int) []int {
 		dict[elem] = i
 	}
 
-	s := bca
-
 	sort.Strings([]string{"sfd"})
 
 	return []int{}
